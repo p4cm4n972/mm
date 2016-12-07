@@ -1,0 +1,63 @@
+$margeBase: 0;
+$bgBase:url(img/barber.png);
+$fontBase: Pacifico, cursive;
+$fontP: Dancing Script, cursive;
+$bgHeaderFooter:grey;
+@import 'src/fonction.scss';
+
+
+body{
+    @include elementFull;
+    margin: $margeBase;
+    background-image: $bgBase ;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+body, h1, h2, h3{
+    font-family: $fontBase;
+    }
+
+header{
+    @include elementFull;
+    background-color:$bgHeaderFooter;}
+header h1{
+        display:inline-block;
+        width: 30%;
+    }
+header nav{
+        display:inline-block;
+        width: 69%;
+    }
+
+p{
+    margin: $margeBase;
+    font-family: $fontP;
+}
+
+nav{
+    @include listHorizontale;
+    }
+footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-color:$bgHeaderFooter;
+    margin-top:0;
+}
+footer ul{
+        display:inline-block;
+        list-style-type: none;
+}
+footer ul li{
+            float: left;
+        }
+    
+footer ul li img {
+        display:inline-block;
+        width:75px;
+        height: 75px;
+     }
+    
+    
+
